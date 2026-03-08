@@ -1,67 +1,121 @@
+/* notPlayzz Neon Bloxdman Style */
 body {
-    background-color: #0a0a0a;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
+    /* The background you just moved */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                url('assets/backgrounds/Survival 2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    /* Keeps your 8x8 pixels sharp! */
+    image-rendering: pixelated; 
+    
+    color: #ffffff;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
     margin: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Glowing Top Nav */
 nav {
-    padding: 20px;
-    border-bottom: 2px solid #00ffcc; /* Neon Cyan line */
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #00ffcc; /* Neon Cyan */
     box-shadow: 0 0 15px #00ffcc;
+    text-align: center;
 }
 
 .logo {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 900;
     color: #00ffcc;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     text-shadow: 0 0 10px #00ffcc;
 }
 
+/* Header */
 header h1 {
-    margin: 40px 0;
-    font-size: 2.5rem;
-    text-shadow: 0 0 20px #ff00ff; /* Neon Pink glow */
+    margin-top: 60px;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #ff00ff; /* Neon Pink */
+    text-shadow: 0 0 20px #ff00ff;
 }
 
-/* Bloxdman-style list rows */
+header p {
+    color: #00ffcc;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Bloxdman-Style Rows */
+main {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+}
+
 .pack-row {
-    background: #111;
-    margin: 10px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
+    background: rgba(20, 20, 20, 0.9);
+    margin-bottom: 15px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #333;
     transition: 0.3s;
 }
 
 .pack-row:hover {
-    border-color: #00ffcc;
-    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+    border-color: #ff00ff;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+    transform: scale(1.01);
+}
+
+.pack-info {
+    text-align: left;
 }
 
 .pack-name {
-    font-size: 1.2rem;
+    display: block;
+    font-size: 1.4rem;
     font-weight: bold;
+    color: #fff;
 }
 
+.pack-stats {
+    font-size: 0.9rem;
+    color: #00ffcc; /* Cyan sub-text */
+}
+
+/* Neon Download Button */
 .download-btn {
-    background-color: #00ffcc;
-    color: #000;
-    text-decoration: none;
-    padding: 10px 20px;
+    background: transparent;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    padding: 12px 24px;
     border-radius: 5px;
     font-weight: bold;
-    box-shadow: 0 0 10px #00ffcc;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
 }
 
 .download-btn:hover {
-    background-color: #ff00ff;
-    box-shadow: 0 0 20px #ff00ff;
-    color: #fff;
+    background: #00ffcc;
+    color: #000;
+    box-shadow: 0 0 25px #00ffcc;
+}
+
+footer {
+    margin-top: auto;
+    padding: 40px;
+    color: #666;
 }
